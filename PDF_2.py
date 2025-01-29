@@ -12,13 +12,13 @@ Title_pagina = "ScaleSkills"
 c = canvas.Canvas(file_name, pagesize=A4)
 width, height = A4
 print(height,width)
-# # afbeelding
-# x_img= 421
-# y_img= 580
-# width = 200  
-# height = 150
-# image_path = "path/to/your/image.jpg"  
-# c.drawImage(image_path, x_img, y_img, width, height)
+# afbeelding
+x_img= 280
+y_img= 650
+width = 300  
+height = 120
+image_path = "sskills.png"  
+c.drawImage(image_path, x_img, y_img, width, height)
 # bovenste lijn 
 x3,y3=0,590
 x4,y4=595,590
