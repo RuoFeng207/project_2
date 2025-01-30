@@ -13,16 +13,22 @@ klant_postcode = klant["postcode"]
 klant_stad = klant["stad"]
 klant_KVK = klant["KVK-nummer"]
 producten = order["producten"]
-producten = producten.pop(0)
-product_naam = producten["productnaam"]
-product_aantal = producten["aantal"]
-product_prijs = producten["prijs_per_stuk_excl_btw"]
-product_btw_procent = producten["btw_percentage"]
-product_totprijs = product_aantal * product_prijs
-if product_btw_procent == 6:
-    product_btwprijs = ((product_totprijs / 100) * 106) - product_totprijs
-elif product_btw_procent == 9:
-    product_btwprijs = ((product_totprijs / 100) * 109) - product_totprijs
-elif product_btw_procent == 21:
-    product_btwprijs = ((product_totprijs / 100) * 121) - product_totprijs
-print(product_btwprijs)
+productnamen = []
+aantallen = []
+prijzen_excl_btw = []
+btw_percentages = []
+totale_prijzen_incl_btw = []
+
+for product in producten:
+    productnaam = product["productnaam"]
+    aantal = product["aantal"]
+    prijs_per_stuk = product["prijs_per_stuk_excl_btw"]
+    btw_percentage = product["btw_percentage"]
+    totale_prijs_excl_btw = aantal * prijs_per_stuk
+    totale_prijs_incl_btw = totale_prijs_excl_btw * (1 + (btw_percentage / 100))
+    
+    productnamen.append(productnaam)
+    aantallen.append(aantal)
+    prijzen_excl_btw.append(prijs_per_stuk)
+    btw_percentages.append(btw_percentage)
+    totale_prijzen_incl_btw.append(totale_prijs_incl_btw)
