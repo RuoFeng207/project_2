@@ -1,5 +1,5 @@
 # imports
-from deel 2 import 
+from deel_2 import factuur
 import os, json
 from reportlab.lib.pagesizes import A4
 from reportlab.pdfgen import canvas
@@ -14,6 +14,7 @@ c = canvas.Canvas(file_name, pagesize=A4)
 # a = 
 width, height = A4
 print(height, width)
+
 
 # # Driehoek blauw
 # c.setFillColor("#3877aa")  # Zet de vulkleur naar blauw (#3877aa)
@@ -42,7 +43,7 @@ c.line(279.5, 250, 595, 250)
 
 # Tekst klant
 c.setFont("Helvetica", 11)
-c.drawString(30, 690, adres)
+c.drawString(30, 690, factuur.klant_adres)
 c.drawString(30, 670, "Tel: 06-51944831")
 c.drawString(30, 650, "E mail: SSkills@info.com")
 
