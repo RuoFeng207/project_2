@@ -1,6 +1,8 @@
 import json
-
-with open("C:/School/Software Development/Projecten/project_2/deel_2/test_set_softwareleverancier/2000-096.json", "r") as f:
+import os
+file_path = os.path.dirname(__file__)
+json_location = os.path.join(file_path, "2000-096.json")
+with open(json_location, "r") as f:
     data = json.load(f)
     
 order = data["order"]
