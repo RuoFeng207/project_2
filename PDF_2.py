@@ -1,4 +1,5 @@
 # imports
+from deel 2 import 
 import os, json
 from reportlab.lib.pagesizes import A4
 from reportlab.pdfgen import canvas
@@ -41,7 +42,7 @@ c.line(279.5, 250, 595, 250)
 
 # Tekst klant
 c.setFont("Helvetica", 11)
-c.drawString(30, 690, "Adres: Europasingel 102693 GW Wervershoof")
+c.drawString(30, 690, adres)
 c.drawString(30, 670, "Tel: 06-51944831")
 c.drawString(30, 650, "E mail: SSkills@info.com")
 
