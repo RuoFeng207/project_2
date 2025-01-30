@@ -77,7 +77,8 @@ c.drawString(120, 260, f. ordernummer)
 # Totaal +- btw
 c.drawString(279.5, 340, "Totaal exclusief btw (21%) €")
 c.drawString(279.5, 320, "Btw €")
-c.drawString(420, 340, "400")
+#btw prijzen
+c.drawString(420, 340, "400") #Dion
 c.drawString(310, 320, "84")
 
 # Inclusief btw
