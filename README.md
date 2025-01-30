@@ -8,3 +8,14 @@ We gaan deze week werken aan een factuur en een programma dat PDF's uitprint. op
 # dag plan 30 janurai
 - opdracht 1 afmaken van deel 2
 - deel 3 af maken
+- presentatie proberen te maken
+
+# dag plan 31 januari
+- dions report bekijken
+-  forloop maken
+-  preseatie af maken
+-  Ruo Feng door met deel 4
+
+# Wat hebben we af
+- deel 1
+- deel 2

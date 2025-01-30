@@ -8,6 +8,7 @@ with open(json_location, "r") as f:
 order = data["order"]
 ordernummer = order["ordernummer"]
 orderdatum = order["orderdatum"]
+betaaltermijn = order["betaaltermijn"]
 klant = order["klant"]
 klant_naam = klant["naam"]
 klant_adres = klant["adres"]
@@ -34,3 +35,6 @@ for product in producten:
     prijzen_excl_btw.append(prijs_per_stuk)
     btw_percentages.append(btw_percentage)
     totale_prijzen_incl_btw.append(totale_prijs_incl_btw)
+while len(totale_prijzen_incl_btw) > 0:
+    prijzen = totale_prijzen_incl_btw.pop(0)
+    totale_prijs =+ prijzen
