@@ -1,6 +1,6 @@
 import json
 
-with open("C:/School/Software Development/Projecten/project_2/deel 2/test_set_softwareleverancier/2000-096.json", "r") as f:
+with open("C:/School/Software Development/Projecten/project_2/deel_2/test_set_softwareleverancier/2000-096.json", "r") as f:
     data = json.load(f)
     
 order = data["order"]
