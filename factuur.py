@@ -26,7 +26,7 @@ prijzen = []
 hoeveel = []
 
 for product in producten:
-    #merdere producten tellen
+    # meerdere producten tellen
     productnaam = product["productnaam"]
     aantal = product["aantal"]
     prijs_per_stuk = product["prijs_per_stuk_excl_btw"]
