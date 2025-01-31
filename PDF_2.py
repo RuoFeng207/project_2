@@ -16,21 +16,22 @@ width, height = A4
 print(height, width)
 
 
-# # Driehoek blauw
-# c.setFillColor("#3877aa")  # Zet de vulkleur naar blauw (#3877aa)
-# c.polygon([(0, 692), (297, 842), (0, 842)], fill=1)  # Teken en vul de blauwe driehoek
+# achtergrond
+x_img2 = 0
+y_img2 = 0  
+width2 = 595
+height2 = 842
+image_path2 = "project_2pdf.png"
+c.drawImage(image_path2, x_img2, y_img2, width2, height2)
 
-# # Driehoek geel
-# c.setFillColor("#ffe464")  # Zet de vulkleur naar geel (#ffe464)
-# c.polygon([(595, 150), (297, 0), (595, 0)], fill=1)  # Teken en vul de gele driehoek
-
-# afbeelding
+# afbeelding logo
 x_img = 280
 y_img = 600  
 width = 290
 height = 110
-image_path = os.path.dirname(os.path.abspath(__file__))+"\\sskills.png"
+image_path = "sskills.png"
 c.drawImage(image_path, x_img, y_img, width, height)
+
 
 # Bovenste lijn
 c.line(0, 505, 595, 505)
