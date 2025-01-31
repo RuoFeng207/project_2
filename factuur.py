@@ -20,7 +20,6 @@ productnamen = []
 aantallen = []
 prijzen_excl_btw = []
 btw_percentages = []
-<<<<<<< Updated upstream
 totale_prijzen_incl_btw1 = []
 totale_prijzen_excl_btw1 = []
 prijzen = []
@@ -28,28 +27,18 @@ hoeveel = []
 
 for product in producten:
     #merdere producten tellen
-=======
-totale_prijzen_incl_btw = []
-
-for product in producten:
->>>>>>> Stashed changes
     productnaam = product["productnaam"]
     aantal = product["aantal"]
     prijs_per_stuk = product["prijs_per_stuk_excl_btw"]
     btw_percentage = product["btw_percentage"]
     totale_prijs_excl_btw = aantal * prijs_per_stuk
     totale_prijs_incl_btw = totale_prijs_excl_btw * (1 + (btw_percentage / 100))
-<<<<<<< Updated upstream
     # append de dingen naar een list
     totale_prijzen_incl_btw1.append(totale_prijs_incl_btw)
-=======
-    
->>>>>>> Stashed changes
     productnamen.append(productnaam)
     aantallen.append(aantal)
     prijzen_excl_btw.append(prijs_per_stuk)
     btw_percentages.append(btw_percentage)
-<<<<<<< Updated upstream
     totale_prijzen_excl_btw1.append(totale_prijs_excl_btw)
     # teller
     hoeveel.append("ha")
@@ -83,9 +72,3 @@ if len(hoeveel) == 1:
             btw3 = str(btw_percentages.pop(0))
             prijstotbtw3 = totale_prijzen_incl_btw1.pop(0)
             prijstot3 = totale_prijzen_excl_btw1.pop(0)
-=======
-    totale_prijzen_incl_btw.append(totale_prijs_incl_btw)
-while len(totale_prijzen_incl_btw) > 0:
-    prijzen = totale_prijzen_incl_btw.pop(0)
-    totale_prijs =+ prijzen
->>>>>>> Stashed changes
