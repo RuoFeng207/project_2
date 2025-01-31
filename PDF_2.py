@@ -59,26 +59,38 @@ c.drawString(145, 540, "83949484")
 c.drawString(250, 540, "93047372")
 
 # Uren bedrag btw
-c.drawString(30, 490, "Datum dienst geleverd - 28 januari-31 januari")
-c.drawString(30, 470, "Dienst levering - fixen van software problemen")
-#Dion
-# c.drawString(270, 490, f.aantallen)
-# c.drawString(335, 490, f.prijs_per_stuk)
-# c.drawString(420, 490, f.btw_percentage)
+een = 490
+if len(f.hoeveel) >= 1:
+    c.drawString(30, 490, f"Geleverd product - {f.product1}")
+    c.drawString(270, 490, f.aantal1)
+    c.drawString(335, 490, f.prijszonder1)
+    c.drawString(420, 490, f.btw1)
+    if len(f.hoeveel) >= 2:
+        c.drawString(30, 470, f"Geleverd product - {f.product2}")
+        c.drawString(270, 470, f.aantal2)
+        c.drawString(335, 470, f.prijszonder2)
+        c.drawString(420, 470, f.btw2)
+        if len(f.hoeveel) >= 3:
+            c.drawString(30, 450, f"Geleverd product - {f.product3}")
+            c.drawString(270, 450, f.aantal3)
+            c.drawString(335, 450, f.prijszonder3)
+            c.drawString(420, 450, f.btw3)
+    
 
 # Klant
-# c.drawString(100, 340, f.klant_naam )
-# c.drawString(70, 320, f.klant_adres)
-# c.drawString(90, 300, f.klant_postcode)
-# c.drawString(60, 280, f.klant_stad)
-# c.drawString(120, 260, f. ordernummer)
+c.drawString(100, 340, f.klant_naam )
+c.drawString(70, 320, f.klant_adres)
+c.drawString(90, 300, f.klant_postcode)
+c.drawString(60, 280, f.klant_stad)
+c.drawString(120, 260, f. ordernummer)
 
 
 # Totaal +- btw
-c.drawString(279.5, 340, "Totaal exclusief btw (21%) €")
+c.drawString(279.5, 340, f"Totaal exclusief btw € {f.prijzenTot}")
+print(f.prijzenTot)
 c.drawString(279.5, 320, "Btw €")
 #btw prijzen
-c.drawString(420, 340, "400") #Dion
+ #Dion
 c.drawString(310, 320, "84")
 
 # Inclusief btw
@@ -102,7 +114,7 @@ c.drawString(250, 560, "Bank nummer")
 
 # Uren bedrag btw
 c.drawString(30, 510, "Omschrijving")
-c.drawString(270, 510, "Uren")
+c.drawString(270, 510, "Aantal")
 c.drawString(335, 510, "Bedrag")
 c.drawString(420, 510, "Btw")
 
