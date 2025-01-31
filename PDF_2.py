@@ -67,11 +67,11 @@ c.drawString(30, 470, "Dienst levering - fixen van software problemen")
 # c.drawString(420, 490, f.btw_percentage)
 
 # Klant
-c.drawString(100, 340, f.klant_naam )
-c.drawString(70, 320, f.klant_adres)
-c.drawString(90, 300, f.klant_postcode)
-c.drawString(60, 280, f.klant_stad)
-c.drawString(120, 260, f. ordernummer)
+# c.drawString(100, 340, f.klant_naam )
+# c.drawString(70, 320, f.klant_adres)
+# c.drawString(90, 300, f.klant_postcode)
+# c.drawString(60, 280, f.klant_stad)
+# c.drawString(120, 260, f. ordernummer)
 
 
 # Totaal +- btw
