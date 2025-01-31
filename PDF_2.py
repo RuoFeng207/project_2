@@ -1,5 +1,5 @@
 # imports
-from project_2 import factuur
+import factuur
 import os, json
 from reportlab.lib.pagesizes import A4
 from reportlab.pdfgen import canvas
@@ -29,7 +29,7 @@ x_img = 280
 y_img = 600  
 width = 290
 height = 110
-image_path = "sskills.png"
+image_path = os.path.dirname(os.path.abspath(__file__))+"\\sskills.png"
 c.drawImage(image_path, x_img, y_img, width, height)
 
 # Bovenste lijn
