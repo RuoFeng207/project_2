@@ -1,5 +1,5 @@
 # imports
-from deel_2 import factuur
+from project_2 import factuur
 import os, json
 from reportlab.lib.pagesizes import A4
 from reportlab.pdfgen import canvas
