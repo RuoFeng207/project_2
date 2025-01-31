@@ -58,6 +58,7 @@ if len(hoeveel) == 1:
     btw1 = str(btw_percentages.pop(0))
     prijstotbtw1 = totale_prijzen_incl_btw1.pop(0)
     prijstot1 = totale_prijzen_excl_btw1.pop(0)
+    prijsbtw = prijstotbtw1 - prijstot1
     if len(hoeveel) == 2:
         product2 = productnamen.pop(0)
         aantal2 = str(aantallen.pop(0))
@@ -65,6 +66,7 @@ if len(hoeveel) == 1:
         btw2 = str(btw_percentages.pop(0))
         prijstotbtw2 = totale_prijzen_incl_btw1.pop(0)
         prijstot2 = totale_prijzen_excl_btw1.pop(0)
+        prijsbtw = prijstotbtw2 - prijstot2
         if len(hoeveel) == 3:
             product3 = productnamen.pop(0)
             aantal3 = str(aantallen.pop(0))
@@ -72,3 +74,4 @@ if len(hoeveel) == 1:
             btw3 = str(btw_percentages.pop(0))
             prijstotbtw3 = totale_prijzen_incl_btw1.pop(0)
             prijstot3 = totale_prijzen_excl_btw1.pop(0)
+            prijsbtw = prijstotbtw3 - prijstot3

@@ -87,11 +87,10 @@ c.drawString(120, 260, f. ordernummer)
 
 # Totaal +- btw
 c.drawString(279.5, 340, f"Totaal exclusief btw € {f.prijzenTot}")
-print(f.prijzenTot)
 c.drawString(279.5, 320, "Btw €")
 #btw prijzen
  #Dion
-c.drawString(310, 320, "84")
+c.drawString(310, 320, f"{f.prijsbtw}")
 
 # Inclusief btw
 c.drawString(430, 230, "€")
