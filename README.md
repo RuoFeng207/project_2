@@ -16,7 +16,10 @@ We gaan deze week werken aan een factuur en een programma dat PDF's uitprint. op
 -  forloop maken
 -  preseatie af maken
 -  Ruo Feng door met deel 4
-
+# dag plan 3 feberuari 
+- dion deel 3 opdracht 2
+-  ik powerpoint 
 # Wat hebben we af
 - deel 1
 - deel 2
+- deel 3 opdracht 1
