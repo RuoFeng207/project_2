@@ -16,23 +16,15 @@ f = factuur
 width, height = A4
 print(height, width)
 
+# achtergrond
+x_img2 = 0
+y_img2 = 0  
+width2 = 595
+height2 = 842
+image_path2 = "project_2pdf.png"
+c.drawImage(image_path2, x_img2, y_img2, width2, height2)
 
-# Driehoek blauw
-c.setFillColor(HexColor("#3877aa"))  # Zet de vulkleur naar blauw (#3877aa)
-c.setStrokeColor(HexColor("#3877aa"))  # Zet de lijnkleur naar blauw
-c.beginPath()  # Begin een nieuw pad
-c.moveTo(0, 692)  # Beginpunt van de driehoek
-c.lineTo(297, 842)  # Tweede punt van de driehoek
-c.lineTo(0, 842)  # Derde punt van de driehoek
-c.closePath()  # Sluit het pad
-c.fill()  # Vul de driehoek met de huidige vulkleur
-c.stroke()  # Teken de omtrek van de driehoek
-
-# # Driehoek geel
-# p.setFillColor("#ffe464")  # Zet de vulkleur naar geel (#ffe464)
-# p.polygon([(595, 150), (297, 0), (595, 0)], fill=1)  # Teken en vul de gele driehoek
-
-# afbeelding
+# afbeelding logo
 x_img = 280
 y_img = 600  
 width = 290
