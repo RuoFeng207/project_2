@@ -94,7 +94,7 @@ c.drawString(279.5, 320, "Btw €")
 c.drawString(310, 320, "84")
 
 # Inclusief btw
-c.drawString(430, 230, "€")
+c.drawString(430, 230, f"€ {f.totale_prijs}")
 #Dion
 # c.drawString(440, 230, f.totale_prijs_incl_btw)
 
