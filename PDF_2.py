@@ -16,20 +16,20 @@ width, height = A4
 print(height, width)
 
 
-# # Driehoek blauw
-# c.setFillColor("#3877aa")  # Zet de vulkleur naar blauw (#3877aa)
-# c.polygon([(0, 692), (297, 842), (0, 842)], fill=1)  # Teken en vul de blauwe driehoek
+# Driehoek blauw
+c.setFillColor("#3877aa")  # Zet de vulkleur naar blauw (#3877aa)
+c.polygon([(0, 692), (297, 842), (0, 842)], fill=1)  # Teken en vul de blauwe driehoek
 
-# # Driehoek geel
-# c.setFillColor("#ffe464")  # Zet de vulkleur naar geel (#ffe464)
-# c.polygon([(595, 150), (297, 0), (595, 0)], fill=1)  # Teken en vul de gele driehoek
+# Driehoek geel
+c.setFillColor("#ffe464")  # Zet de vulkleur naar geel (#ffe464)
+c.polygon([(595, 150), (297, 0), (595, 0)], fill=1)  # Teken en vul de gele driehoek
 
 # afbeelding
 x_img = 280
 y_img = 600  
 width = 290
 height = 110
-image_path = os.path.dirname(os.path.abspath(__file__))+"\\sskills.png"
+image_path = "sskills.png"
 c.drawImage(image_path, x_img, y_img, width, height)
 
 # Bovenste lijn
@@ -59,23 +59,12 @@ c.drawString(145, 540, "83949484")
 c.drawString(250, 540, "93047372")
 
 # Uren bedrag btw
-een = 490
-if len(f.hoeveel) >= 1:
-    c.drawString(30, 490, f"Geleverd product - {f.product1}")
-    c.drawString(270, 490, f.aantal1)
-    c.drawString(335, 490, f.prijszonder1)
-    c.drawString(420, 490, f.btw1)
-    if len(f.hoeveel) >= 2:
-        c.drawString(30, 470, f"Geleverd product - {f.product2}")
-        c.drawString(270, 470, f.aantal2)
-        c.drawString(335, 470, f.prijszonder2)
-        c.drawString(420, 470, f.btw2)
-        if len(f.hoeveel) >= 3:
-            c.drawString(30, 450, f"Geleverd product - {f.product3}")
-            c.drawString(270, 450, f.aantal3)
-            c.drawString(335, 450, f.prijszonder3)
-            c.drawString(420, 450, f.btw3)
-    
+c.drawString(30, 490, "Datum dienst geleverd - 28 januari-31 januari")
+c.drawString(30, 470, "Dienst levering - fixen van software problemen")
+#Dion
+# c.drawString(270, 490, f.aantallen)
+# c.drawString(335, 490, f.prijs_per_stuk)
+# c.drawString(420, 490, f.btw_percentage)
 
 # Klant
 c.drawString(100, 340, f.klant_naam )
@@ -86,11 +75,10 @@ c.drawString(120, 260, f. ordernummer)
 
 
 # Totaal +- btw
-c.drawString(279.5, 340, f"Totaal exclusief btw € {f.prijzenTot}")
-print(f.prijzenTot)
+c.drawString(279.5, 340, "Totaal exclusief btw (21%) €")
 c.drawString(279.5, 320, "Btw €")
 #btw prijzen
- #Dion
+c.drawString(420, 340, "400") #Dion
 c.drawString(310, 320, "84")
 
 # Inclusief btw
@@ -114,7 +102,7 @@ c.drawString(250, 560, "Bank nummer")
 
 # Uren bedrag btw
 c.drawString(30, 510, "Omschrijving")
-c.drawString(270, 510, "Aantal")
+c.drawString(270, 510, "Uren")
 c.drawString(335, 510, "Bedrag")
 c.drawString(420, 510, "Btw")
 

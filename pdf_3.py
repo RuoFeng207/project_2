@@ -1,6 +1,10 @@
 # imports
+<<<<<<< Updated upstream
 from _2 import factuur
 import os, json
+=======
+import os, json          #Deze pdf is een mindere variant en ingelevert in deel 2
+>>>>>>> Stashed changes
 from reportlab.lib.pagesizes import A4
 from reportlab.pdfgen import canvas
 from reportlab.graphics.shapes import *
@@ -105,10 +109,16 @@ c.drawString(420, 510, "Btw")
 
 # Klant
 c.drawString(30, 340, "Klant naam:")
+<<<<<<< Updated upstream
 c.drawString(30, 320, "Adres:")
 c.drawString(30, 300, "Postcode:")
 c.drawString(30, 280, "Stad:")
 c.drawString(30, 260, "Order nummer:")
+=======
+c.drawString(30, 320, "Adres:")                       
+c.drawString(30, 300, "Huisnummer:")
+c.drawString(30, 280, "Tel:")
+>>>>>>> Stashed changes
 
 # Totaal +- btw
 c.drawString(279.5, 230, "Totaal inclusief btw (21%)")
