@@ -21,7 +21,7 @@ x_img2 = 0
 y_img2 = 0  
 width2 = 595
 height2 = 842
-image_path2 = "project_2pdf.png"
+image_path2 =  os.path.dirname(os.path.abspath(__file__))+"\\project_2pdf.png"
 c.drawImage(image_path2, x_img2, y_img2, width2, height2)
 
 # afbeelding logo
@@ -29,7 +29,7 @@ x_img = 280
 y_img = 600  
 width = 290
 height = 110
-image_path = "sskills.png"
+image_path = os.path.dirname(os.path.abspath(__file__))+"\\sskills.png"
 c.drawImage(image_path, x_img, y_img, width, height)
 
 
