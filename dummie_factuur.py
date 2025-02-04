@@ -2,7 +2,8 @@ import json
 import os
 
 file_path = os.path.dirname(__file__)
-json_location = os.path.join(file_path, "2000-096.json")
+json_location = os.path.join(file_path, "JSON_ORDER")
+print(json_location)
 
 with open(json_location, "r") as f:
     data = json.load(f)
