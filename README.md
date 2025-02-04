@@ -23,3 +23,10 @@ We gaan deze week werken aan een factuur en een programma dat PDF's uitprint. op
 - deel 1
 - deel 2
 - deel 3 opdracht 1
+  
+# plannen voor dit project 
+- chek waneer het werkte
+- loop door de json
+- voeg samen met vaktuur dictanary
+- kijk of je een willekeure pdf kan runnen
+- zet ze in een hoofd loop
