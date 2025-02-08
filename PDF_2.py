@@ -1,5 +1,5 @@
 # imports
-import dummie_factuur
+# import factuur
 import os, json
 from reportlab.lib.pagesizes import A4
 from reportlab.pdfgen import canvas
@@ -11,7 +11,7 @@ def pdf():
 
     # Maak canvas
     c = canvas.Canvas(file_name, pagesize=A4)
-    f = dummie_factuur
+    # f = factuur
     width, height = A4
     print(height, width)
 
@@ -60,42 +60,30 @@ def pdf():
     c.drawString(250, 540, "93047372")
 
     # Uren bedrag btw
-    een = 490
-    if len(f.hoeveel) >= 1:
-        c.drawString(30, 490, f"Geleverd product - {f.product1}")
-        c.drawString(270, 490, f.aantal1)
-        c.drawString(335, 490, f.prijszonder1)
-        c.drawString(420, 490, f.btw1)
-        if len(f.hoeveel) >= 2:
-            c.drawString(30, 470, f"Geleverd product - {f.product2}")
-            c.drawString(270, 470, f.aantal2)
-            c.drawString(335, 470, f.prijszonder2)
-            c.drawString(420, 470, f.btw2)
-            if len(f.hoeveel) >= 3:
-                c.drawString(30, 450, f"Geleverd product - {f.product3}")
-                c.drawString(270, 450, f.aantal3)
-                c.drawString(335, 450, f.prijszonder3)
-                c.drawString(420, 450, f.btw3)
 
+    c.drawString(30, 490, "Geleverd product -")
+    c.drawString(270, 490, "6")
+    c.drawString(335, 490, "100")
+    c.drawString(420, 490,"21")
 
-    # Klant
-    c.drawString(100, 340, f.klant_naam )
-    c.drawString(70, 320, f.klant_adres)
-    c.drawString(90, 300, f.klant_postcode)
-    c.drawString(60, 280, f.klant_stad)
-    c.drawString(120, 260, f. ordernummer)
+    # # Klant
+    # c.drawString(100, 340, f.klant_naam )
+    # c.drawString(70, 320, f.klant_adres)
+    # c.drawString(90, 300, f.klant_postcode)
+    # c.drawString(60, 280, f.klant_stad)
+    # c.drawString(120, 260, f. ordernummer)
 
 
     # Totaal +- btw
-    c.drawString(279.5, 340, f"Totaal exclusief btw € {f.prijzenTot}")
+    c.drawString(279.5, 340, f"Totaal exclusief btw € {""}")
     c.drawString(279.5, 320, "Btw €")
     #btw prijzen
     #Dion
-    c.drawString(310, 320, f"{f.prijsbtw}")
+    c.drawString(310, 320, f"{""}")
 
     # Inclusief btw
     c.drawString(430, 230, "€")
-    c.drawString(430, 230, f"€ {f.totale_prijs}")
+    c.drawString(430, 230, f"€ {""}")
     #Dion
     # c.drawString(440, 230, f.totale_prijs_incl_btw)
 
@@ -136,5 +124,4 @@ def pdf():
     c.save()
 
     print(f"Je PDF is opgeslagen in {file_name}")
-
 pdf()
