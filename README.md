@@ -30,3 +30,7 @@ We gaan deze week werken aan een factuur en een programma dat PDF's uitprint. op
 - voeg samen met vaktuur dictanary
 - kijk of je een willekeure pdf kan runnen
 - zet ze in een hoofd loop
+# nieuw plan 
+- pdf 2 goed krijgen dat word zeg maar de 1.0 versie die is nu af
+- pdf 3 maken kopeier dingen van pdf 2 en wijzig zo dat het in een loop kan
+  - dit kan je doen door een dictunary te maken voor voorbeelding kijk in deel 1 module 4 opdracht 1,2,3,4,en 5 gegevens
