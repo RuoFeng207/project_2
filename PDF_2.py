@@ -87,17 +87,15 @@ c.drawString(120, 260, f. ordernummer)
 
 
 # Totaal +- btw
-c.drawString(279.5, 340, f"Totaal exclusief btw € {f.prijzenTot}")
+c.drawString(279.5, 340, f"Totaal exclusief btw € {f.prijzenTot:.2f}")
 c.drawString(279.5, 320, "Btw €")
 #btw prijzen
  #Dion
-c.drawString(310, 320, f"{f.prijsbtw}")
+c.drawString(310, 320, f"{f.prijsbtw :.2f}")
 
 # Inclusief btw
 c.drawString(430, 230, "€")
-c.drawString(430, 230, f"€ {f.totale_prijs}")
-#Dion
-# c.drawString(440, 230, f.totale_prijs_incl_btw)
+c.drawString(430, 230, f"€ {f.totale_prijs:.2f}")
 
 # Dik gedrukte tekst
 c.setFont("Helvetica-Bold", 18)
