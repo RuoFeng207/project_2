@@ -19,6 +19,7 @@ if os.path.exists(json_location) and os.path.isdir(json_location):
 
             with open(bestandspad, "r", encoding="utf-8") as file:
                 data = json.load(file)  # Laad JSON in een dictionary
+            # print(colored('succses', 'green', attrs=['bold']))
 
             order = data.get("order", {})
             ordernummer = order.get("ordernummer")

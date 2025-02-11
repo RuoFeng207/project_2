@@ -60,10 +60,20 @@ c.drawString(145, 540, "83949484")
 c.drawString(250, 540, "93047372")
 
 # Uren bedrag btw
-c.drawString(30, 490, f"Product naam - {f.productnaam}")
-c.drawString(280, 490, str(f.aantal))
-c.drawString(345, 490, str(f.prijs_per_stuk))
-c.drawString(430, 490, str(f"{f.btw_percentage}%"))
+y_cordinaat = 490
+for product in f.producten:  
+    productnaam = product.get('productnaam', 'Onbekend product')
+    aantal = product.get('aantal', 0)
+    prijs_per_stuk = product.get('prijs_per_stuk_excl_btw', 0)
+    btw_percentage = product.get('btw_percentage', 0) 
+    c.drawString(30, y_cordinaat, f"Product naam - {productnaam}")
+    c.drawString(280, y_cordinaat, str(aantal))
+    c.drawString(345, y_cordinaat, str(prijs_per_stuk))
+    c.drawString(430, y_cordinaat, str(f"{btw_percentage}%"))  # Gebruik de veilig opgehaalde waarde
+    y_cordinaat -= 20  # Verlaag de Y-coördinaat voor elk product
+
+
+
 
 # Klant
 c.drawString(100, 340, f.naam_klant )
